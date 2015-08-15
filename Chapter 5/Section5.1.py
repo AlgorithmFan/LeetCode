@@ -36,8 +36,6 @@ class Solution:
         while len(current):
             result.append(list())
             for node in current:
-                if not isTreeNode(node):
-                    continue
                 result[-1].append(node.val)
                 if isTreeNode(node.left):
                     next.append(node.left)
