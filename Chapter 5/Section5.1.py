@@ -6,6 +6,9 @@ from TreeNode import TreeNode
 isTreeNode = lambda x: x is not None
 
 class Solution:
+    '''
+    Given a binary tree, return the level order traversal of its nodes' values.
+    '''
     def __init__(self):
         pass
 
