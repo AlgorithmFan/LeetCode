@@ -5,6 +5,9 @@
 Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
 For example. given the array [-2, 1, -3, 4, -1, 2, 1, -5, 4], the contiguous subarray [4, -1, 2, 1] has the largest sum = 6.
 最大连续子序列和。
+分析：设result[i] 保存每一状态的最大连续子序列和的结果，
+如果result[i-1]+a[i] > a[i], 则result[i] = result[i-1]+a[i]
+如果result[i-1]+a[i] <= a[i], 则result[i] = a[i]
 '''
 
 class Solution:
